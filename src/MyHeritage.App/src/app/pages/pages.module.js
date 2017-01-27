@@ -1,62 +1,20 @@
-/**
- * @author v.lugovsky
- * created on 16.12.2015
- */
-(function () {
-  'use strict';
-
-  angular.module('BlurAdmin.pages', [
-    'ui.router',
-
-    'BlurAdmin.pages.dashboard',
-    'BlurAdmin.pages.ui',
-    'BlurAdmin.pages.components',
-    'BlurAdmin.pages.form',
-    'BlurAdmin.pages.tables',
-    'BlurAdmin.pages.charts',
-    'BlurAdmin.pages.maps',
-    'BlurAdmin.pages.profile',
-  ])
-      .config(routeConfig);
-
-  /** @ngInject */
-  function routeConfig($urlRouterProvider, baSidebarServiceProvider) {
-    $urlRouterProvider.otherwise('/dashboard');
-
-    baSidebarServiceProvider.addStaticItem({
-      title: 'Pages',
-      icon: 'ion-document',
-      subMenu: [{
-        title: 'Sign In',
-        fixedHref: 'auth.html',
-        blank: true
-      }, {
-        title: 'Sign Up',
-        fixedHref: 'reg.html',
-        blank: true
-      }, {
-        title: 'User Profile',
-        stateRef: 'profile'
-      }, {
-        title: '404 Page',
-        fixedHref: '404.html',
-        blank: true
-      }]
-    });
-    baSidebarServiceProvider.addStaticItem({
-      title: 'Menu Level 1',
-      icon: 'ion-ios-more',
-      subMenu: [{
-        title: 'Menu Level 1.1',
-        disabled: true
-      }, {
-        title: 'Menu Level 1.2',
-        subMenu: [{
-          title: 'Menu Level 1.2.1',
-          disabled: true
-        }]
-      }]
-    });
-  }
-
-})();
+"use strict";
+var core_1 = require('@angular/core');
+var common_1 = require('@angular/common');
+var pages_routing_1 = require('./pages.routing');
+var nga_module_1 = require('../theme/nga.module');
+var pages_component_1 = require('./pages.component');
+var PagesModule = (function () {
+    function PagesModule() {
+    }
+    PagesModule = __decorate([
+        core_1.NgModule({
+            imports: [common_1.CommonModule, nga_module_1.NgaModule, pages_routing_1.routing],
+            declarations: [pages_component_1.Pages]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], PagesModule);
+    return PagesModule;
+}());
+exports.PagesModule = PagesModule;
+//# sourceMappingURL=pages.module.js.map

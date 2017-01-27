@@ -14,6 +14,8 @@ using Microsoft.AspNetCore.Diagnostics;
 using System.Net;
 using Microsoft.AspNetCore.Http;
 using MyHeritage.API.Core;
+using MyHeritage.Data.Abstract;
+using MyHeritage.Data.Repositories;
 
 namespace MyHeritage.API
 {
@@ -57,6 +59,8 @@ namespace MyHeritage.API
                         break;
                 }
             });
+
+            services.AddScoped<ITreeMemberHeritageRepository, TreeMemberHeritageRepository>();
 
             // Automapper Configuration
             AutoMapperConfiguration.Configure();

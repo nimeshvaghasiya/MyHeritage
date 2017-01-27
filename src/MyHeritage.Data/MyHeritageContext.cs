@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
-using MyHeritage.Model.Entity;
+using MyHeritage.Model;
 
 namespace MyHeritage.Data
 {

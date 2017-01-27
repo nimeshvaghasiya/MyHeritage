@@ -1,0 +1,16 @@
+
+
+-- Firebase web app
+
+<script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCT-OHF1exWz3DBXNFyIMA5L3G8j2Q-Juo",
+    authDomain: "myheritage-b3970.firebaseapp.com",
+    databaseURL: "https://myheritage-b3970.firebaseio.com",
+    storageBucket: "myheritage-b3970.appspot.com",
+    messagingSenderId: "492686131844"
+  };
+  firebase.initializeApp(config);
+</script>
