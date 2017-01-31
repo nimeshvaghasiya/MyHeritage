@@ -62,3 +62,6 @@ npm-debug.log
 # IDE #
 .idea/
 *.swp
+
+# Visual Studio
+*.suo
