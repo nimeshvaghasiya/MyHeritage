@@ -22,7 +22,9 @@ const routes: Routes = [
       { path: 'ui', loadChildren: () => System.import('./ui/ui.module') },
       { path: 'forms', loadChildren: () => System.import('./forms/forms.module') },
       { path: 'tables', loadChildren: () => System.import('./tables/tables.module') },
-      { path: 'maps', loadChildren: () => System.import('./maps/maps.module') }
+      { path: 'maps', loadChildren: () => System.import('./maps/maps.module') },
+      { path: 'd3-tree', loadChildren: () => System.import('./d3/d3.module') },
+      { path: 'paint', loadChildren: () => System.import('./paint/paint.module') }
     ]
   }
 ];
