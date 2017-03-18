@@ -23,7 +23,9 @@ var routes = [
             { path: 'ui', loadChildren: function () { return System.import('./ui/ui.module'); } },
             { path: 'forms', loadChildren: function () { return System.import('./forms/forms.module'); } },
             { path: 'tables', loadChildren: function () { return System.import('./tables/tables.module'); } },
-            { path: 'maps', loadChildren: function () { return System.import('./maps/maps.module'); } }
+            { path: 'maps', loadChildren: function () { return System.import('./maps/maps.module'); } },
+            { path: 'd3-tree', loadChildren: function () { return System.import('./d3/d3.module'); } },
+            { path: 'paint', loadChildren: function () { return System.import('./paint/paint.module'); } }
         ]
     }
 ];

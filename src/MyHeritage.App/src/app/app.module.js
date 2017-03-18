@@ -1,4 +1,5 @@
 "use strict";
+/// <reference path="shared/utils/config.service.ts" />
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var forms_1 = require('@angular/forms');
@@ -16,6 +17,7 @@ var app_service_1 = require('./app.service');
 var global_state_1 = require('./global.state');
 var nga_module_1 = require('./theme/nga.module');
 var pages_module_1 = require('./pages/pages.module');
+var config_service_1 = require('./shared/utils/config.service');
 // Application wide providers
 var APP_PROVIDERS = [
     app_service_1.AppState,
@@ -79,7 +81,8 @@ var AppModule = (function () {
             ],
             providers: [
                 environment_1.ENV_PROVIDERS,
-                APP_PROVIDERS
+                APP_PROVIDERS,
+                config_service_1.ConfigService
             ]
         }), 
         __metadata('design:paramtypes', [core_1.ApplicationRef, app_service_1.AppState])

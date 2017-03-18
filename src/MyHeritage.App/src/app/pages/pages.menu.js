@@ -4,6 +4,52 @@ exports.PAGES_MENU = [
         path: 'pages',
         children: [
             {
+                path: '',
+                data: {
+                    menu: {
+                        title: 'D3 JS',
+                        icon: 'ion-android-home',
+                        pathMatch: 'prefix',
+                        selected: false,
+                        expanded: false,
+                        order: 0
+                    }
+                },
+                children: [
+                    {
+                        path: 'd3-tree',
+                        data: {
+                            menu: {
+                                title: 'd3 tree',
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                path: '',
+                data: {
+                    menu: {
+                        title: 'Paint',
+                        icon: 'ion-android-home',
+                        pathMatch: 'prefix',
+                        selected: false,
+                        expanded: false,
+                        order: 0
+                    }
+                },
+                children: [
+                    {
+                        path: 'paint',
+                        data: {
+                            menu: {
+                                title: 'paint',
+                            }
+                        }
+                    }
+                ]
+            },
+            {
                 path: 'dashboard',
                 data: {
                     menu: {
