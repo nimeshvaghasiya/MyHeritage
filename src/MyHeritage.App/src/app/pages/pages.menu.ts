@@ -1,7 +1,19 @@
 export const PAGES_MENU = [
     {
         path: 'pages',
-        children: [
+        children: [            
+            {
+                path: 'dashboard',
+                data: {
+                    menu: {
+                        title: 'Dashboard',
+                        icon: 'ion-android-home',
+                        selected: false,
+                        expanded: false,
+                        order: 0
+                    }
+                }
+            },
             {
                 path: '',  // path for our page
                 data: { // custom menu declaration
@@ -47,18 +59,6 @@ export const PAGES_MENU = [
                         }
                     }
                 ]
-            },
-            {
-                path: 'dashboard',
-                data: {
-                    menu: {
-                        title: 'Dashboard',
-                        icon: 'ion-android-home',
-                        selected: false,
-                        expanded: false,
-                        order: 0
-                    }
-                }
             },
             {
                 path: 'editors',
